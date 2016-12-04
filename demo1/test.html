@@ -4,25 +4,331 @@
     <meta charset="UTF-8">
     <title>Hello Bootstrap</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            margin: 0 10px;
+            font-family: 微软雅黑;
+        }
+
+    </style>
 </head>
 <body>
-<h1>Hello Bootstrap<small>bootstrap</small></h1>
-<h2>Hello Bootstrap<small>bootstrap</small></h2>
-<h3>Hello Bootstrap<small>bootstrap</small></h3>
-<h4>Hello Bootstrap<small>bootstrap</small></h4>
-<h5>Hello Bootstrap<small>bootstrap</small></h5>
-<h6>Hello Bootstrap<small>bootstrap</small></h6>
-
-<div class="h1">Hello Bootstrap<small>bootstrap</small></div>
-<div class="h2">Hello Bootstrap<small>bootstrap</small></div>
-<div class="h3">Hello Bootstrap<small>bootstrap</small></div>
-<div class="h4">Hello Bootstrap<small>bootstrap</small></div>
-<div class="h5">Hello Bootstrap<small>bootstrap</small></div>
-<div class="h6">Hello Bootstrap<small>bootstrap</small></div>
-
+<h1>Hello Bootstrap
+    <small>bootstrap</small>
+</h1>
+<h2>Hello Bootstrap
+    <small>bootstrap</small>
+</h2>
+<h3>Hello Bootstrap
+    <small>bootstrap</small>
+</h3>
+<h4>Hello Bootstrap
+    <small>bootstrap</small>
+</h4>
+<h5>Hello Bootstrap
+    <small>bootstrap</small>
+</h5>
+<h6>Hello Bootstrap
+    <small>bootstrap</small>
+</h6>
+<hr>
+<div class="h1">Hello Bootstrap
+    <small>bootstrap</small>
+</div>
+<div class="h2">Hello Bootstrap
+    <small>bootstrap</small>
+</div>
+<div class="h3">Hello Bootstrap
+    <small>bootstrap</small>
+</div>
+<div class="h4">Hello Bootstrap
+    <small>bootstrap</small>
+</div>
+<div class="h5">Hello Bootstrap
+    <small>bootstrap</small>
+</div>
+<div class="h6">Hello Bootstrap
+    <small>bootstrap</small>
+</div>
+<hr>
 <p>我是普通文本，我的样子长成这样我是普通文本，我的样子长成这样我是普通文本</p>
 <p class="lead">这部分内容需要特别的强调，我和别人长得不一样</p>
 <p><strong>Bootstrap:</strong>这部分内容需要特别的<b>强调</b>，我和别人长得不一样</p>
-<p>我正在学习Bootstrap。我发现Bootstrap真的好强大。</p>
+<p>我正在学习<em>Bootstrap</em>。我发现<i>Bootstrap</i>真的好强大。</p>
+<hr>
+<div class="text-muted">.text-muted 效果</div>
+<div class="text-primary">.text-primary效果</div>
+<div class="text-success">.text-success效果</div>
+<div class="text-info">.text-info效果</div>
+<div class="text-warning">.text-warning效果</div>
+<div class="text-danger">.text-danger效果</div>
+<p class="text-danger">我是一段危险信息</p>
+<hr>
+<p class="text-left">我居左</p>
+<p class="text-center">我居中</p>
+<p class="text-right">我居右</p>
+<p class="text-justify">There is clear
+    ly a need for CSS to be taken seriously by graphic artists. The Zen Garden aims to excite, inspire, and encourage
+    participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style
+    sheet into this very page. The code remains the same, the only thing that has changed is the external .css
+    file. </p>
+<hr>
+<ul>
+    <li>无序列表信息1</li>
+    <li>无序列表信息2</li>
+    <li>无序列表信息3</li>
+</ul>
+<ol>
+    <li>有序列表信息1</li>
+    <li>有序列表信息2</li>
+    <li>有序列表信息3</li>
+</ol>
+<dl>
+    <dt>定义列表标题</dt>
+    <dd>定义列表信息1</dd>
+    <dd>定义列表信息2</dd>
+</dl>
+<hr>
+<h5>普通列表</h5>
+<ul>
+    <li>列表项目</li>
+    <li>列表项目</li>
+    <li>列表项目</li>
+    <li>列表项目</li>
+    <li>列表项目</li>
+</ul>
+<h5>有序列表</h5>
+<ol>
+    <li>项目列表一</li>
+    <li>项目列表二</li>
+    <li>项目列表三</li>
+</ol>
+<h5>有序列表嵌套</h5>
+<ol>
+    <li>有序列表</li>
+    <li>
+        有序列表
+        <ol class="list-unstyled">
+            <li>有序列表(2)</li>
+            <li>有序列表(2)</li>
+        </ol>
+    </li>
+    <li>有序列表</li>
+</ol>
+<hr>
+<ul class="list-inline">
+    <li>W3cplus</li>
+    <li>Blog</li>
+    <li>CSS3</li>
+    <li>jQuery</li>
+    <li>PHP</li>
+</ul>
+<hr>
+<dl>
+    <dt>W3cplus</dt>
+    <dd>一个致力于推广国内前端行业的技术博客</dd>
+    <dt>慕课网</dt>
+    <dd>一个真心在做教育的网站</dd>
+</dl>
+<hr>
+<dl class="dl-horizontal">
+    <dt>W3cplus</dt>
+    <dd>一个致力于推广国内前端行业的技术博客。它以探索为己任，不断活跃在行业技术最前沿，努力提供高质量前端技术博文</dd>
+    <dt>慕课网</dt>
+    <dd>一个专业的，真心实意在做培训的网站</dd>
+    <dt>我来测试一个标题，我来测试一个标题</dt>
+    <dd>我在写一个水平定义列表的效果，我在写一个水平定义列表的效果</dd>
+</dl>
+<hr>
+code风格：
+<div>Bootstrap的代码风格有三种：<code>&lt;code&gt;</code>、<code>&lt;pre&gt;</code>和<code>&lt;kbd&gt;</code></div>
+pre风格：
+<div>
+<pre>
+&lt;ul&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</div>
+kbd风格：
+<div>请输入<kbd>ctrl+c</kbd>来复制代码，然后使用<kbd>ctrl+v</kbd>来粘贴代码</div>
+<p>请使用<kbd>ctrl+x</kbd>复制代码，然后使用<kbd>ctrl+shift+v</kbd>将复制的代码粘贴到需要的地方。</p>
+<hr>
+高度超出340px，就会在Y轴出现滚动条
+<pre class="pre-scrollable">
+<ol>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+</ol>
+</pre>
+<hr>
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>类名</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="active">
+        <td>.active</td>
+        <td>表示当前活动的信息</td>
+    </tr>
+    <tr class="success">
+        <td>.success</td>
+        <td>表示成功或者正确的行为</td>
+    </tr>
+    <tr class="info">
+        <td>.info</td>
+        <td>表示中立的信息或行为</td>
+    </tr>
+    <tr class="warning">
+        <td>.warning</td>
+        <td>表示警告，需要特别注意</td>
+    </tr>
+    <tr class="danger">
+        <td>.danger</td>
+        <td>表示危险或者可能是错误的行为</td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+基础表格
+<table class="table">
+    <thead>
+    <tr>
+        <th>表格标题</th>
+        <th>表格标题</th>
+        <th>表格标题</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+斑马线表格
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>表格标题</th>
+        <th>表格标题</th>
+        <th>表格标题</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+悬浮高亮的表格
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>表格标题</th>
+        <th>表格标题</th>
+        <th>表格标题</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+响应式表格
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>表格标题</th>
+            <th>表格标题</th>
+            <th>表格标题</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+        </tr>
+        <tr>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+        </tr>
+        <tr>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+        </tr>
+        <tr>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+            <td>表格单元格</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
