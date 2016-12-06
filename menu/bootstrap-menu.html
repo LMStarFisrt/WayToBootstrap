@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap-menu</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style type="text/css">
+        body {
+            margin: 0 10px;
+            font-family: 微软雅黑;
+        }
+        #LM .dropdown{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<hr>
+<div>
+    <h4>下拉菜单</h4>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div>
+    <h4>下拉菜单分割线</h4>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" id="dropdownMenu2" type="button" data-toggle="dropdown">
+            带分割线的下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项1</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项2</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项3</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项a</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项b</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项c</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项A</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项B</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项C</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div>
+    <h4>下拉菜单分割线和头部</h4>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" id="dropdownMenu3" type="button" data-toggle="dropdown">
+            食物
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+            <li role="presentation" class="dropdown-header">水果</li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">香蕉</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">苹果</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">雪梨</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">榴莲</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">蔬菜</li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">青菜</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">茄子</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">包菜</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">主食</li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">米饭</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">面条</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">饺子</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div id="LM" style="margin: 100px 100px">
+    <h4>使用pull-right类使下拉菜单与父容器右边对齐(官方不建议使用)</h4>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu4">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+        </ul>
+    </div>
+    <br/>
+    <br/>
+    <h4>使用dropdown-menu-right类使下拉菜单与父容器右边对齐</h4>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu5">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+        </ul>
+    </div>
+    <br/>
+    <br/>
+    <h4>下拉菜单与父容器左边对齐</h4>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu6" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu6">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+<h4>菜单状态</h4>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu7" data-toggle="dropdown">
+        选择你喜欢的水果
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu7">
+        <li role="presentation" ><a role="menuitem" tabindex="-1" href="#">苹果</a></li>
+        <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">香蕉</a></li>
+        <li role="presentation" ><a role="menuitem" tabindex="-1" href="#">梨</a></li>
+        <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">桃</a></li>
+    </ul>
+</div>
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
