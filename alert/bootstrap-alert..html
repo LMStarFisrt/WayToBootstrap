@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap-alert</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style type="text/css">
+        body {
+            margin: 10px 10px;
+            font-family: 微软雅黑;
+        }
+    </style>
+</head>
+<body>
+<hr>
+<h4>警示框</h4>
+<div class="alert alert-info">请修改对应信息</div>
+<div class="alert alert-success">谢谢操作成功</div>
+<div class="alert alert-warning">您已操作失败两次，还有最后一次机会</div>
+<div class="alert alert-danger">对不起，您刚才操作失败</div>
+<hr>
+<h4>可关闭的警示框</h4>
+<div class="alert alert-info alert-dismissible">
+    <button class="close" type="button" data-dismiss="alert">&times;</button>
+    请修改对应信息</div>
+<div class="alert alert-success alert-dismissible">
+    <button class="close" type="button" data-dismiss="alert">&times;</button>
+    谢谢操作成功</div>
+<div class="alert alert-warning alert-dismissible">
+    <button class="close" type="button" data-dismiss="alert">&times;</button>
+    您已操作失败两次，还有最后一次机会</div>
+<div class="alert alert-danger alert-dismissible">
+    <button class="close" type="button" data-dismiss="alert">&times;</button>
+    对不起，您刚才操作失败</div>
+<hr>
+<h4>警示框的链接</h4>
+<div class="alert alert-success" role="alert">
+    <strong>Well done!</strong>
+    You successfully read
+    <a href="#" class="alert-link">this important alert message</a>
+    .
+</div>
+<div class="alert alert-info" role="alert">
+    <strong>Heads up!</strong>
+    This
+    <a href="#" class="alert-link">alert needs your attention</a>
+    , but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+    <strong>Warning!</strong>
+    Better check yourself,
+    <a href="##" class="alert-link">you're not looking too good</a>
+    .
+</div>
+<div class="alert alert-danger" role="alert">
+    <strong>Oh snap!</strong><a href="##" class="alert-link">Change a few things up</a>
+    and try submitting again.
+</div>
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
