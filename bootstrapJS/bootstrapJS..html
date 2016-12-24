@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrapJS</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style type="text/css">
+        body {
+            margin: 10px 10px;
+            font-family: 微软雅黑;
+        }
+    </style>
+</head>
+<body>
+<hr>
+<button class="btn btn-primary" type="button">点击我</button>
+<div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">模态弹出窗标题</h4>
+            </div>
+            <div class="modal-body">
+                <p>模态弹出窗主体内容</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<hr>
+<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal-data" type="button">通过data-target触发</button>
+<!-- 模态弹出窗内容 -->
+<div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">模态弹出窗标题</h4>
+            </div>
+            <div class="modal-body">
+                <p>模态弹出窗主体内容</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<!-- 选项卡组件（菜单项nav-tabs）-->
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#bulletin" role="tab" data-toggle="tab">公告</a></li>
+    <li><a href="#rule" role="tab" data-toggle="tab">规则</a></li>
+    <li><a href="#forum" role="tab" data-toggle="tab">论坛</a></li>
+    <li><a href="#security" role="tab" data-toggle="tab">安全</a></li>
+    <li><a href="#welfare" role="tab" data-toggle="tab">公益</a></li>
+</ul>
+<!-- 选项卡面板 -->
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane active" id="bulletin">公告内容面板</div>
+    <div class="tab-pane" id="rule">规则内容面板</div>
+    <div class="tab-pane" id="forum">论坛内容面板</div>
+    <div class="tab-pane" id="security">安全内容面板</div>
+    <div class="tab-pane" id="welfare">公益内容面板</div>
+</div>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<!--<script>
+    $(function () {
+        $(".btn").click(function () {
+            $("#mymodal").modal("toggle");
+        })
+    })
+</script>-->
+</body>
+</html>
