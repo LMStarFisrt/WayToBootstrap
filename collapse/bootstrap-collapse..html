@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap-collapse</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style type="text/css">
+        body {
+            margin: 10px 10px;
+            font-family: 微软雅黑;
+        }
+    </style>
+</head>
+<body>
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">标题一</a></h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">标题一对应的内容</div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">标题二</a></h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">标题二对应的内容</div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse"data-parent="#accordion"href="#collapseThree">标题三</a></h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">标题三对应的内容</div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="panel-group" id="1">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h4><a href="#panel1" data-toggle="collapse" data-target="#panel1" data-parent="1">标题一</a></h4>
+            </div>
+        </div>
+        <div class="panel-collapse collapse" id="panel1">
+            <div class="panel-body">
+                这是折叠区内容
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h4><a href="#panel2" data-toggle="collapse" data-target="#panel2" data-parent="1">标题二</a></h4>
+            </div>
+        </div>
+        <div class="panel-collapse collapse" id="panel2">
+            <div class="panel-body">
+                这是折叠区内容
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h4><a href="#panel3" data-toggle="collapse" data-target="#panel3" data-parent="1">标题三</a></h4>
+            </div>
+        </div>
+        <div class="panel-collapse collapse" id="panel3">
+            <div class="panel-body">
+                这是折叠区内容
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
