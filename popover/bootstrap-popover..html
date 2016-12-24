@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap-popover</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style type="text/css">
+        body {
+            margin: 10px 10px;
+            font-family: 微软雅黑;
+        }
+    </style>
+</head>
+<body>
+<hr>
+<button type="button" class="btn btn-default" id="MyPopover">猛击我吧</button>
+<hr>
+<a href="##" class="btn btn-primary"
+   data-toggle="popover"
+   data-original-title="标题"
+   data-content="内容sss"
+   data-placement="right">
+    猛击我吧
+</a>
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+        $('#MyPopover').popover({
+          title:"我是标题",
+           content:"我是内容",
+           placement:"right"
+        });
+    });
+</script>
+</body>
+</html>
