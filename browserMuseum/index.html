@@ -62,6 +62,10 @@
             font-size: 28px;
         }
 
+        #about .modal-dialog p {
+            text-indent: 2em;
+        }
+
         @media (max-width: 768px) {
 
             .summary {
@@ -218,8 +222,6 @@
 </div>
 
 
-
-
 <!-- 主要内容 -->
 <div class="container summary">
 
@@ -277,7 +279,7 @@
         <div role="tabpanel" class="tab-pane" id="tab-Firefox">
             <div class="row feature">
                 <div class="col-md-5">
-                    <img class="feature-img img-responsive"  src="images/firefox-logo.jpg">
+                    <img class="feature-img img-responsive" src="images/firefox-logo.jpg">
                 </div>
                 <div class="col-md-7">
                     <h2 class="feature-heading">
@@ -300,14 +302,14 @@
                         Safari在2003年1月7日首度发行测试版，并成为Mac OS X v10.3与之后的默认浏览器，也是iPhone与IPAD和iPod touch的指定浏览器。</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="feature-img img-responsive"  src="images/safari-logo.jpg">
+                    <img class="feature-img img-responsive" src="images/safari-logo.jpg">
                 </div>
             </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="tab-Opera">
             <div class="row feature">
                 <div class="col-md-5">
-                    <img class="feature-img img-responsive"  src="images/opera-logo.jpg">
+                    <img class="feature-img img-responsive" src="images/opera-logo.jpg">
                 </div>
                 <div class="col-md-7">
                     <h2 class="feature-heading">
@@ -340,12 +342,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;<span class="sr-only">关闭</span></button>
+                    <button type="button" class="close" data-dismiss="modal">&times;<span class="sr-only">关闭</span>
+                    </button>
                     <h4 class="modal-title" id="modal-label">关于</h4>
                 </div>
                 <div class="modal-body">
-                    <p>慕课网隶属于北京慕课科技中心(有限合伙)，是一家从事互联网免费教学的网络教育公司。秉承“开拓、创新、公平、分享”的精神，
-                        将互联网特性全面的应用在教育领域，致力于为教育机构及求学者打造一站式互动在线教育品牌。</p>
+                    <p>浏览器是指可以显示网页服务器或者文件系统的HTML文件（标准通用标记语言的一个应用）内容，并让用户与这些文件交互的一种软件。</p>
+                    <p>它用来显示在万维网或局域网等内的文字、图像及其他信息。这些文字或图像，可以是连接其他网址的超链接，用户可迅速及轻易地浏览各种信息。大部分网页为HTML格式。</p>
+                    <p>
+                        一个网页中可以包括多个文档，每个文档都是分别从服务器获取的。大部分的浏览器本身支持除了HTML之外的广泛的格式，例如JPEG、PNG、GIF等图像格式，并且能够扩展支持众多的插件（plug-ins）。另外，许多浏览器还支持其他的URL类型及其相应的协议，如FTP、Gopher、HTTPS（HTTP协议的加密版本）。HTTP内容类型和URL协议规范允许网页设计者在网页中嵌入图像、动画、视频、声音、流媒体等。</p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">了解了</button>
@@ -367,13 +372,13 @@
     $(function () {
         $('#ad-carousel').carousel();
         $('#menu-nav .navbar-collapse a').click(function (event) {
-            var href=$(this).attr("href");
-            var tabId=$(this).attr("data-tab");
-            if( '#' !== href){
+            var href = $(this).attr("href");
+            var tabId = $(this).attr("data-tab");
+            if ('#' !== href) {
                 event.preventDefault();
                 $(document).scrollTop($(href).offset().top - 70);
-                if(tabId){
-                    $('#feature-tabs a[href="#'+tabId+'"]').tab('show');
+                if (tabId) {
+                    $('#feature-tabs a[href="#' + tabId + '"]').tab('show');
                 }
             }
         })
